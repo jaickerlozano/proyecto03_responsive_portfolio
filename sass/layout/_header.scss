@@ -46,7 +46,7 @@
         background-image: none;
         margin: 0;
         padding: 0;
-        margin-bottom: 90px;
+        margin-bottom: 20px;
 
         &__title {
             @include padding-container();
@@ -79,14 +79,23 @@
             background-color: $dark-grey;
             z-index: -1;
         }
-
     }
 }
 
 // Media query desktop
 .header {
     @include breakpoint(desktop) {
-        padding-left: 133px;
-        padding-right: 133px;
+        margin-bottom: 65px;
+        @include padding-desktop();
+
+        &__title { 
+            padding: 40px 0 0 0;
+            margin: 0;
+        }
+
+        &__nav-principal {
+            padding-top: 40px;
+            margin-bottom: 65px;
+        }
     }
 }

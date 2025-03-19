@@ -36,5 +36,17 @@
 
 // Media query desktop
 .experience {
-    @include padding-desktop();
+    @include breakpoint(desktop) {
+        padding-top: 72px;
+        justify-content: space-between;
+
+        &__language {
+            width: 26%;
+            margin-bottom: 58px !important;
+        }
+
+        &__title {
+            margin-bottom: 14px;
+        }
+    }
 }

@@ -97,6 +97,8 @@
 @include breakpoint(tablet) {
     .footer {
         padding-bottom: 40px;
+        background-position: left bottom 18%;
+        background-size: 22%;
 
         &__header {
             flex-direction: row;
@@ -119,5 +121,50 @@
     .contact {
         padding-left: 132px;
         padding-right: 132px;
+    }
+}
+
+// Media query desktop
+.footer {
+    @include breakpoint(desktop) {
+        @include padding-desktop();
+        padding-top: 84px;
+        padding-bottom: 92px;
+        background-image: url('./img/rings-left-desktop-footer.svg');
+        background-repeat: no-repeat;
+        background-position: left bottom 39%;
+        background-size: 25%;
+        .contact{
+            padding-left: 0;
+            padding-right: 0;
+            display: flex;
+
+            &__container-title {
+                width: 47%;
+            }
+
+            &__title {
+                text-align: start;
+            }
+
+            &__text {
+                text-align: justify;
+            }
+
+            &__form {
+                margin-left: auto;
+            }
+        }
+
+        &__header {
+            padding-top: 45px;
+        }
+    }
+}
+
+// Media query desktopxl
+.footer {
+    @include breakpoint(desktopxl) {
+        background-size: 28%;
     }
 }

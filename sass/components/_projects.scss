@@ -1,7 +1,7 @@
 @use '../abstracts/abstracts' as *;
 
 .projects {
-    margin-top: 80px;
+    padding-top: 80px;
     margin-bottom: 80px;
 
     &__header {
@@ -41,9 +41,10 @@
 }
 
 // Media query tablet
-.projects{
-    margin-top: 0;
+.projects {
+
     @include breakpoint(tablet) {
+        padding-top: 0;
         &__header {
             align-items: center;
             margin-bottom: 60px;
@@ -58,6 +59,19 @@
 
         &__article {
             width: 48%;
+        }
+    }
+}
+
+// Media query desktop
+.projects {
+    @include breakpoint(desktop) {
+        &__header {
+            margin-bottom: 80px;
+        }
+
+        &__views {
+            display: none;
         }
     }
 }

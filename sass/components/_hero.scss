@@ -46,3 +46,37 @@
         }
     }
 }
+
+// Media query desktop
+
+.hero {
+    @include breakpoint(desktop) {
+        width: 58%;
+        margin-bottom: 180px;
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__description {
+            width: 60%;
+            margin-bottom: 66px;
+        }
+    }
+}
+
+// Media query desktopxl
+
+.hero {
+    @include breakpoint(desktopxl) {
+        margin-bottom: 240px;
+        width: 60%;
+
+        &__title {
+            margin-bottom: 70px;
+        }
+
+        &__description {
+            width: 60%;
+        }
+    }
+}
