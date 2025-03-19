@@ -1,0 +1,86 @@
+@use '/sass/abstracts/variables' as var;
+
+@mixin breakpoint($bp) {
+  @if $bp == tablet {
+    @media (min-width: var.$bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp == tablethorizontal {
+    @media (min-width: var.$bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: var.$bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp == desktopxl {
+    @media (min-width: var.$bp-desktop-xl) {
+      @content;
+    }
+  }
+}
+
+// Mixin para estilos de fuentes
+@mixin styles($weight, $size, $line-height, $letter-spacing) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin padding-container() {
+  padding-left: 16px;
+  padding-right: 16px;
+  @include breakpoint(tablet) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@mixin padding-desktop() {
+  padding-left: 165px;
+  padding-right: 165px;
+}
+
+@mixin reset-list() {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 25.6px;
+}
+
+@mixin button() {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 2.29px;
+  text-transform: uppercase;
+  color: var.$white;
+  /*border-bottom: 2px var.$green solid;
+  padding-bottom: 10px;*/
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var.$green;
+    bottom: -10px;
+  }
+}
+
+// Mixin para convertir contenedores en flex, flex-direction column, align-items center
+@mixin flex-column-center() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

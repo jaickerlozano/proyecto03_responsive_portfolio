@@ -1,0 +1,40 @@
+@use '../abstracts/abstracts' as *;
+
+.experience {
+    @include flex-column-center();
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px $light-grey solid;
+    border-bottom: 1px $light-grey solid;
+
+    &__language {
+        @include flex-column-center();
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+// Media query tablet
+.experience {
+    @include breakpoint(tablet) {
+        border-bottom: none;
+        padding-top: 52px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 0;
+        margin-bottom: 48px;
+
+        &__language {
+            display: block;
+            width: 50%;
+            margin-bottom: 52px;
+        }
+    }
+}
+
+// Media query desktop
+.experience {
+    @include padding-desktop();
+}

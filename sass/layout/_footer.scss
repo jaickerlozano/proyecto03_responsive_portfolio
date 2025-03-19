@@ -1,0 +1,123 @@
+@use '../abstracts/abstracts' as *;
+
+.footer {
+    background-color: $dark-grey;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url('./img/icon-rings-left.svg');
+    background-repeat: no-repeat;
+    background-position: left bottom 39%;
+    background-size: 50%;
+    @include padding-container();
+
+    &__header {
+        padding: 40px 95px 0px 95px;
+        @include flex-column-center();
+    }
+
+    &__header-title {
+        letter-spacing: -0.33px;
+        margin-bottom: 20px;
+    }
+
+    &__header-secondary {
+        
+        ul {
+            @include reset-list();
+        }
+    }
+
+    &__header-icon {
+        display: inline-block;
+        width: 20px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.contact {
+    padding-bottom: 87px;
+    border-bottom: 1px $white solid;
+    
+    &__container-title{
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        text-align: center;
+    }
+
+    &__form-group {
+        display: flex;
+        flex-direction: column;
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+
+        .button {
+            background-color: $dark-grey;
+            border: 0px;
+            width: max-content;
+            margin-left: auto;
+        }
+    }
+
+    &__label {
+        color: $grey;
+        letter-spacing: -0.22px;
+        margin-left: 24px;
+    }
+
+    &__input {
+        background-color: $dark-grey;
+        border: 0px;
+        border-bottom: 1px $white solid;
+    }
+
+    &__textarea {
+        background-color: $dark-grey;
+        border: 0px;
+        border-bottom: 1px $white solid;
+        height: 80px;
+        // Este background es para que la imagen coincida con el con la del footer
+        /*background-image: url('./img/icon-rings-left.svg');
+        background-repeat: no-repeat;
+        background-position: left -4% bottom 77%;
+        background-size: 51.9%;*/ //Estárá desactivado mientras se termina la página
+    }
+}
+
+// Media query tablet
+@include breakpoint(tablet) {
+    .footer {
+        padding-bottom: 40px;
+
+        &__header {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 30px 0 0 0;
+        }
+
+        &__header-title {
+            margin-bottom: 0;
+            font-size: 32px;
+            letter-spacing: 0;
+        }
+
+        &__header-icon {
+            display: inline-block;
+            width: 24px;
+        }
+    }
+    
+    .contact {
+        padding-left: 132px;
+        padding-right: 132px;
+    }
+}

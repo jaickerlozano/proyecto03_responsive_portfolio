@@ -1,0 +1,63 @@
+@use '../abstracts/abstracts' as *;
+
+.projects {
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin-bottom: 40px;
+    }
+
+    &__article {
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        margin-bottom: 7px;
+    }
+
+    &__languages {
+        margin-bottom: 20px;
+        span+span{
+            margin-left: 18px;
+        }
+    }
+
+    &__views {
+        .button:last-child {
+            margin-left: 30px;
+        }
+    }
+}
+
+// Media query tablet
+.projects{
+    margin-top: 0;
+    @include breakpoint(tablet) {
+        &__header {
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-between;
+        }
+
+        &__article {
+            width: 48%;
+        }
+    }
+}

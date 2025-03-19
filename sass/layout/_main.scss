@@ -1,0 +1,10 @@
+@use '../abstracts/abstracts' as *;
+
+.main {
+    @include padding-container();
+
+    @include breakpoint(desktop) {
+        @include padding-desktop();
+    }
+}
+
