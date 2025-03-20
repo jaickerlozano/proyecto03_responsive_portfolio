@@ -1,0 +1,54 @@
+// Fonts. Fuente importada desde Google Fonts
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('SpaceGrotesk-Light.eot');
+    src: url('SpaceGrotesk-Light.eot?#iefix') format('embedded-opentype'),
+        url('SpaceGrotesk-Light.woff2') format('woff2'),
+        url('SpaceGrotesk-Light.woff') format('woff'),
+        url('SpaceGrotesk-Light.ttf') format('truetype'),
+        url('SpaceGrotesk-Light.svg#SpaceGrotesk-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Fonts Icons. Fuente importada desde Icomoon
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../../fonts/icomoon.eot?is7j4p');
+    src:  url('../../fonts/icomoon.eot?is7j4p#iefix') format('embedded-opentype'),
+      url('../../fonts/icomoon.ttf?is7j4p') format('truetype'),
+      url('../../fonts/icomoon.woff?is7j4p') format('woff'),
+      url('../../fonts/icomoon.svg?is7j4p#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-icon-github:before {
+    content: "\e901";
+  }
+  .icon-icon-linkedin:before {
+    content: "\e902";
+  }
+  .icon-icon-twitter:before {
+    content: "\e903";
+  }
+  .icon-icon-media:before {
+    content: "\e904";
+  }
