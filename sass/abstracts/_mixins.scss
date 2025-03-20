@@ -66,15 +66,20 @@
   letter-spacing: 2.29px;
   text-transform: uppercase;
   color: var.$white;
-  /*border-bottom: 2px var.$green solid;
-  padding-bottom: 10px;*/
-  &::before {
+  border-bottom: 2px var.$green solid;
+  padding-bottom: 10px;
+  /*&::before {
     content: '';
     position: absolute;
     width: 100%;
     height: 2px;
     background-color: var.$green;
     bottom: -10px;
+  }*/
+  transition-duration: 0.3s;
+  &:hover {
+    transition-duration: 0.3s;
+    color: var.$green;
   }
 }
 

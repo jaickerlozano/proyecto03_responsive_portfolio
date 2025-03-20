@@ -70,8 +70,46 @@
             margin-bottom: 80px;
         }
 
+        &__img {   
+            transition: opacity 0.3s ease;
+        }
+
+        &__article {
+            position: relative;
+            overflow: hidden;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 78%;
+                background-color: rgba($color: #000000, $alpha: 0.5);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                z-index: 1; // Posiciona la opacidad por encima de la imagen
+            }
+        }
+
         &__views {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -110%);
+            .button:last-child {
+                margin-left: 0;
+            }
             display: none;
+            z-index: 2; // Posiciona el elemento por encima de la opacidad
+        }
+        // Efecto de opacidad al pasar el cursor sobre el área del artículo
+        &__article:hover .projects__img {
+            opacity: 0.3;
+        }
+
+        &__article:hover .projects__views {
+            @include flex-column-center();
+            gap: 48px;
         }
     }
 }
