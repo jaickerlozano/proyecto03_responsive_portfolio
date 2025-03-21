@@ -138,6 +138,13 @@
     }
 }
 
+// MEdia query tablethorizontal
+.footer {
+    @include breakpoint(tablethorizontal) {
+        @include paddind-tablethorizontal();
+    }
+}
+
 // Media query desktop
 .footer {
     @include breakpoint(desktop) {

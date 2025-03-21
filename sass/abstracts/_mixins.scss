@@ -7,6 +7,12 @@
     }
   }
 
+  @if $bp == tabletmedium {
+     @media (min-width: var.$bp-tablet-medium) {
+      @content;
+    }
+  }
+
   @if $bp == tablethorizontal {
     @media (min-width: var.$bp-tablet-horizontal) {
       @content;
@@ -41,6 +47,11 @@
     padding-left: 32px;
     padding-right: 32px;
   }
+}
+
+@mixin paddind-tablethorizontal() {
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 @mixin padding-desktop() {

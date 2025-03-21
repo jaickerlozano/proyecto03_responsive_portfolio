@@ -47,18 +47,40 @@
     }
 }
 
+// Media query tabletmedium
+.hero {
+    @include breakpoint(tabletmedium) {
+        width: 66%;
+        margin-bottom: 120px;
+    }
+}
+
+// Media query tablethorizontal
+.hero {
+    @include breakpoint(tablethorizontal) {
+        margin-bottom: 180px;
+        width: 75%;
+
+        &__title {
+            margin-bottom: 70px;
+        }
+
+        &__description {
+            width: 60%;
+        }
+    }
+}
+
 // Media query desktop
 
 .hero {
     @include breakpoint(desktop) {
-        width: 58%;
-        margin-bottom: 180px;
+        width: 78%;
         &__title {
             margin-bottom: 40px;
         }
 
         &__description {
-            width: 60%;
             margin-bottom: 66px;
         }
     }
@@ -75,8 +97,5 @@
             margin-bottom: 70px;
         }
 
-        &__description {
-            width: 60%;
-        }
     }
 }
