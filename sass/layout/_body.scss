@@ -2,20 +2,20 @@
 
 body {
     background-color: $black;
-    background-image: url('./img/circle.svg'), url('./img/icon-rings-left.svg'), url('./img/icon-rings-right.svg');
+    background-image: url('/circle.svg'), url('/icon-rings-left.svg'), url('/icon-rings-right.svg');
     background-repeat: no-repeat;
     background-position: right top 5.55%, left top 2.7%, right top 26.64%;
     background-size: 18%, 50%, 50%;
     @include breakpoint(tablet){
         font-size: 18px;
-        background-image: url('./img/icon-rings-left.svg'), url('./img/icon-rings-right.svg');
+        background-image: url('/icon-rings-left.svg'), url('/icon-rings-right.svg');
         background-repeat: no-repeat;
         background-position: left top 2.7%, right top 27.64%;
         background-size: 34%, 26%;
     }
 
     @include breakpoint(tablethorizontal) {
-        background-image: url('./img/rings-left-desktop.svg'), url('./img/rings-right-desktop.svg');
+        background-image: url('/rings-left-desktop.svg'), url('/rings-right-desktop.svg');
         background-repeat: no-repeat;
         background-position: left top 2.7%, right top 23.64%;
         background-size: 26%, 26%;
