@@ -1,6 +1,6 @@
 # Portfolio - Landing Page
 
-![Portfolio Preview](ruta-de-tu-imagen)
+![Portfolio Preview](https://github.com/jaickerlozano/proyecto03_responsive_portfolio/blob/main/public/imagen_portfolio.png)
 
 ## 🖥️ Descripción
 
@@ -16,7 +16,7 @@
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tuusuario/portfolio.git
+   git clone https://github.com/jaickerlozano/proyecto03_responsive_portfolio.git
    ```
 2. Accede al directorio del proyecto:
    ```bash
@@ -34,7 +34,7 @@
 
 ## 📸 Capturas de Pantalla
 
-![Header GathSession Preview](https://github.com/jaickerlozano/proyecto02_modern_art_gallery/blob/main/public/modern_art_gallery_gif.gif)
+![Header GathSession Preview](https://github.com/jaickerlozano/proyecto03_responsive_portfolio/blob/main/public/portfolio.gif)
 
 ## 📌 Proyectos Destacados
 
@@ -53,7 +53,7 @@
 
 ## 🔗 Demo en Vivo
 
-Puedes ver la versión en vivo en: [Demo de Portfolio](https://tu-demo.com)
+Puedes ver la versión en vivo en: [Demo de Portfolio](https://jaickerlozano.github.io/proyecto03_responsive_portfolio/)
 
 ## 📩 Contacto
 
