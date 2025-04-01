@@ -38,10 +38,7 @@
 
 ## 📌 Proyectos Destacados
 
-✅ **[e-Learning](https://github.com/tuusuario/e-learning)** - Plataforma educativa interactiva
-✅ **[Modern Art Gallery](https://github.com/tuusuario/modern_art_gallery)** - Galería de arte moderna
-✅ **[Spa & Beauty](https://github.com/tuusuario/spa-and-beauty)** - Página de servicios de spa
-✅ **[Header GathSession](https://github.com/tuusuario/header_gathsession)** - Componente de encabezado responsive
+✅ **[e-Learning](https://github.com/jaickerlozano/Proyecto01_responsive_elearning)** - Plataforma educativa interactiva
 
 ## ✨ Características
 
